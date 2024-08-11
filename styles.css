@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: url('https://wallpapers.com/images/featured/cei80uravrnl6ltm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundAnimation 30s linear infinite;
+}
+
+/* Keyframes for background animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    background-color: rgba(246, 193, 193, 0.8); /* Semi-transparent header with very soft pink */
+    color: #333; /* Dark text color */
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners for header */
+}
+
+footer {
+    background-color: rgba(246, 193, 193, 0.8); /* Semi-transparent footer with very soft pink */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners for footer */
+}
+
+.table {
+    margin-top: 20px;
+    border-collapse: separate; /* Use separate borders to allow rounded corners */
+    border-spacing: 0; /* Remove spacing between table cells */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent table background */
+    border-radius: 8px; /* Rounded edges for the table */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #f6c1c1; /* Very soft shade of pink */
+    color: #333; /* Dark text color */
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Animation for task addition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table .task-row {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.table .btn {
+    margin: 0;
+    cursor: pointer;
+}
+
+.bg-light-pink {
+    background-color: #f6c1c1; /* Very soft shade of pink */
+}
+
+.btn-light-pink {
+    background-color: #f6c1c1; /* Very soft shade of pink */
+    color: #333; /* Dark text color */
+}
+
+.btn-light-pink:hover {
+    background-color: #e5a3a3; /* Slightly darker pink on hover */
+}
+
+
